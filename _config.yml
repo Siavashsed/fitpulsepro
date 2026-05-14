@@ -1,0 +1,10 @@
+title: FitPulse Pro
+description: Training fundamentals and fitness science
+theme: minima
+baseurl: ""
+url: "https://fitpulsepro.io"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
