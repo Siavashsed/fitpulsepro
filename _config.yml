@@ -1,8 +1,8 @@
 title: FitPulse Pro
 description: Training fundamentals and fitness science
 theme: minima
-baseurl: ""
-url: "https://fitpulsepro.io"
+baseurl: "/fitpulsepro"
+url: "https://siavashsed.github.io"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 show_excerpts: true
