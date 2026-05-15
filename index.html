@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FitPulse Pro — Training Science Without the Nonsense</title>
-<meta name="description" content="Training science that holds up in the real world — backed by research, confirmed by 12 years of coaching results.">
+<title>FitPulse Pro - Training Science Without the Nonsense</title>
+<meta name="description" content="Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{  --bg:#0a0d0f;--bg2:#12171a;--sur:#191f24;
@@ -46,19 +46,44 @@ a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
 </style>
 </head>
 <body>
+
+<!-- nav -->
 <div class="stk-bar">
-  <a href="/" class="stk-brand">FitPulse<span> Pro</span></a>
-  <nav class="stk-bar-nav"><a href="/">Home</a><a href="/about.html">About</a></nav>
+  <a href="./" class="stk-brand">FitPulse<span> Pro</span></a>
+  <nav class="stk-bar-nav"><a href="./">Home</a><a href="about.html">About</a></nav>
 </div>
+
+<!-- hero -->
 <div class="stk-splash">
   <div class="stk-splash-tag">Fitness & Training</div>
   <h1>Training Science Without the Nonsense</h1>
-  <p>Training science that holds up in the real world — backed by research, confirmed by 12 years of coaching results.</p>
+  <p>Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.</p>
 </div>
+
+<!-- pexels-banner -->
+<!-- pexels-banner: loads if pexelsKey is in localStorage -->
+<div id="pxl-wrap" style="width:100%;height:220px;overflow:hidden;position:relative;background:var(--bg2);">
+  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;" alt="">
+  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
+</div>
+
+<!-- author-teaser -->
+<div style="background:var(--sur);border-bottom:1px solid var(--brd);padding:28px 48px;display:flex;align-items:center;gap:20px;">
+  <div style="width:44px;height:44px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#000;flex-shrink:0;">CMW</div>
+  <div>
+    <div style="font-size:13px;font-weight:700;color:var(--txt);">Coach Marcus Webb</div>
+    <div style="font-size:12px;color:var(--mut);">NASM-Certified Personal Trainer</div>
+  </div>
+  <a href="about.html" style="margin-left:auto;font-size:12px;color:var(--pri);font-weight:600;">About →</a>
+</div>
+
+<!-- articles -->
 <div class="stk-shelf">
   <div class="stk-shelf-hd">Latest Articles</div>
   <div class="stk-grid" id="stk-grid"></div>
 </div>
+
+<!-- newsletter -->
 <div class="stk-letter">
   <h2>The Training Signal</h2>
   <p>Weekly training insights, protocol breakdowns, and research you can actually use.</p>
@@ -69,11 +94,15 @@ a{color:var(--pri);text-decoration:none}a:hover{opacity:.8}
     </div>
   </form>
 </div>
+
+<!-- footer -->
 <div class="stk-base">
-  <span class="stk-base-copy">© FitPulse Pro — by Coach Marcus Webb</span>
-  <div class="stk-base-links"><a href="/">Home</a><a href="/about.html">About</a></div>
+  <span class="stk-base-copy">© FitPulse Pro - by Coach Marcus Webb</span>
+  <div class="stk-base-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
 </div>
+
 <script>
+/* load articles grid */
 async function loadPosts(){
   const el=document.getElementById('stk-grid');
   try{
@@ -83,7 +112,7 @@ async function loadPosts(){
       <div class="stk-item-cat">Fitness & Training</div>
       <h2>${p.title}</h2>
       <p>${p.meta_description||''}</p>
-      <div class="stk-item-meta"><span>${p.date_iso||''}</span><a class="stk-item-read" href="./${p.slug||'#'}">Read →</a></div>
+      <div class="stk-item-meta"><span>${p.date_iso||''}</span><a class="stk-item-read" href="./${p.slug||'#'}/">Read →</a></div>
     </div>`).join('');
   }catch(e){
     el.innerHTML='<div class="stk-item"><div class="stk-item-cat">Coming Soon</div><h2>Articles publishing shortly</h2><p>The content system is warming up. Check back soon.</p></div>';
@@ -91,5 +120,19 @@ async function loadPosts(){
 }
 function nlSub(e){e.preventDefault();document.getElementById('stk-nl').innerHTML='<div class="stk-letter-ok">✓ You're in. Check your inbox.</div>';}
 loadPosts();
+/* pexels banner loader */
+(function(){
+  var q='gym workout fitness training exercise',k=localStorage.getItem('pexelsKey');
+  if(!k)return;
+  fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent(q)+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+    .then(function(r){return r.json();}).then(function(d){
+      if(!d.photos||!d.photos[0])return;
+      var el=document.getElementById('pxl-img');
+      var cr=document.getElementById('pxl-cred');
+      if(!el)return;
+      el.onload=function(){el.style.opacity='1';if(cr)cr.style.opacity='1';};
+      el.src=d.photos[0].src.large;
+    }).catch(function(){});
+})();
 </script>
 </body></html>
