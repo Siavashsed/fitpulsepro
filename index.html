@@ -1,914 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitPulse Pro | Science-Based Fitness & Training</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        /* --- CSS VARIABLES & RESET --- */
-        :root {
-            --brand-primary: #0a0a0a;
-            --brand-secondary: #dc2626;
-            --brand-accent: #22c55e;
-            --brand-warning: #facc15;
-            --brand-danger: #ef4444;
-            
-            --bg-body: #111111;
-            --bg-card: #1a1a1a;
-            --bg-subtle: #252525;
-            
-            --text-heading: #ffffff;
-            --text-body: #a3a3a3;
-            --text-muted: #737373;
-            
-            --border-color: #333333;
-            --border-light: #2a2a2a;
-            
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-            
-            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-            --font-display: 'Bebas Neue', sans-serif;
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-main);
-            background-color: var(--bg-body);
-            color: var(--text-body);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a {
-            color: var(--brand-secondary);
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        a:hover {
-            color: #ef4444;
-            text-decoration: underline;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* --- HEADER & NAVIGATION --- */
-        .site-header {
-            background-color: var(--brand-primary);
-            border-bottom: 1px solid var(--border-light);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .header-inner {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            color: var(--text-heading);
-            text-decoration: none !important;
-            letter-spacing: 2px;
-        }
-
-        .logo span {
-            color: var(--brand-secondary);
-        }
-
-        .main-nav {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .main-nav a {
-            color: var(--text-heading);
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-decoration: none;
-            padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .main-nav a:hover {
-            color: var(--brand-secondary);
-        }
-
-        .header-actions {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: var(--radius-md);
-            font-weight: 700;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none !important;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 0.9rem;
-        }
-
-        .btn-primary {
-            background-color: var(--brand-secondary);
-            color: #ffffff !important;
-            border: 1px solid transparent;
-        }
-
-        .btn-primary:hover {
-            background-color: #b91c1c;
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--text-heading) !important;
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--bg-subtle);
-            border-color: var(--text-muted);
-        }
-
-        /* --- LAYOUT STRUCTURE --- */
-        .layout-container {
-            max-width: 1280px;
-            margin: 2rem auto 4rem;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 380px;
-            gap: 3rem;
-            align-items: start;
-        }
-
-        /* --- MAIN ARTICLE STYLES --- */
-        .article-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            padding: 3rem;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-light);
-        }
-
-        .breadcrumb {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-
-        .breadcrumb a {
-            color: var(--text-muted);
-        }
-
-        .breadcrumb span {
-            color: var(--border-color);
-        }
-
-        .article-title {
-            font-family: var(--font-display);
-            font-size: 3.5rem;
-            color: var(--text-heading);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-            font-weight: 400;
-        }
-
-        .article-meta {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-light);
-            margin-bottom: 2rem;
-        }
-
-        .author-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--brand-secondary);
-        }
-
-        .author-details h4 {
-            color: var(--text-heading);
-            font-size: 1rem;
-            margin: 0;
-        }
-
-        .author-details p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .social-share {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .social-btn {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-muted);
-            cursor: pointer;
-        }
-        
-        .social-btn:hover {
-            background-color: var(--brand-secondary);
-            color: white;
-            border-color: var(--brand-secondary);
-        }
-
-        .hero-image {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            border-radius: var(--radius-md);
-            margin-bottom: 2rem;
-        }
-
-        /* Content Typography */
-        .content-body h2 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            color: var(--text-heading);
-            margin: 2.5rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--brand-secondary);
-            letter-spacing: 1px;
-        }
-
-        .content-body h3 {
-            font-size: 1.5rem;
-            color: var(--text-heading);
-            margin: 2rem 0 1rem;
-        }
-
-        .content-body p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .content-body ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .content-body li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* --- ADVANCED UI COMPONENTS --- */
-        
-        /* Table of Contents */
-        .toc-box {
-            background-color: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            border-left: 4px solid var(--brand-secondary);
-            border-radius: var(--radius-md);
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .toc-box h4 {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            color: var(--text-heading);
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-        }
-
-        .toc-box ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .toc-box li {
-            margin-bottom: 0.75rem;
-        }
-
-        .toc-box a {
-            color: var(--text-body);
-            font-weight: 500;
-        }
-
-        .toc-box a:hover {
-            color: var(--brand-secondary);
-        }
-
-        /* Callout / Alert Boxes */
-        .alert {
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            margin: 2rem 0;
-            border-left: 4px solid;
-        }
-
-        .alert-info {
-            background-color: rgba(34, 197, 94, 0.1);
-            border-left-color: var(--brand-accent);
-        }
-
-        .alert-warning {
-            background-color: rgba(250, 204, 21, 0.1);
-            border-left-color: var(--brand-warning);
-        }
-
-        .alert h4 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-heading);
-        }
-
-        /* Pros and Cons Split */
-        .pros-cons-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .pc-card {
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-md);
-            padding: 1.5rem;
-        }
-
-        .pc-card.pros {
-            border-top: 4px solid var(--brand-accent);
-        }
-
-        .pc-card.cons {
-            border-top: 4px solid var(--brand-danger);
-        }
-
-        .pc-card h4 {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-heading);
-        }
-
-        .pc-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .pc-card li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 1rem;
-        }
-
-        .pc-card.pros li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--brand-accent);
-            font-weight: bold;
-        }
-
-        .pc-card.cons li::before {
-            content: '✗';
-            position: absolute;
-            left: 0;
-            color: var(--brand-danger);
-            font-weight: bold;
-        }
-
-        /* Advanced Data Table */
-        .table-responsive {
-            overflow-x: auto;
-            margin: 2rem 0;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--border-light);
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            background: var(--bg-card);
-        }
-
-        .data-table th, .data-table td {
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .data-table th {
-            background-color: var(--bg-subtle);
-            color: var(--text-heading);
-            font-weight: 700;
-            white-space: nowrap;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-        }
-
-        .data-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .data-table tbody tr:hover {
-            background-color: var(--bg-subtle);
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .badge-best { background-color: rgba(34, 197, 94, 0.2); color: #22c55e; }
-        .badge-value { background-color: rgba(220, 38, 38, 0.2); color: #dc2626; }
-
-        /* FAQs Native Accordion */
-        .faq-section {
-            margin: 3rem 0;
-        }
-
-        details {
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-md);
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-
-        summary {
-            padding: 1.25rem 1.5rem;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--text-heading);
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        summary::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: var(--brand-secondary);
-            transition: transform 0.2s;
-        }
-
-        details[open] summary::after {
-            content: '−';
-            transform: rotate(180deg);
-        }
-
-        details > div {
-            padding: 0 1.5rem 1.25rem;
-            color: var(--text-body);
-        }
-
-        /* --- SIDEBAR STYLES --- */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            position: sticky;
-            top: 100px;
-        }
-
-        .widget {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            padding: 1.5rem;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
-        }
-
-        .widget-title {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            color: var(--text-heading);
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 2px solid var(--brand-secondary);
-            display: inline-block;
-            letter-spacing: 1px;
-        }
-
-        /* Author Widget */
-        .author-widget {
-            text-align: center;
-        }
-
-        .author-widget img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            border: 3px solid var(--brand-secondary);
-        }
-
-        .author-widget h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.25rem;
-            color: var(--text-heading);
-        }
-
-        .author-widget .credentials {
-            font-size: 0.8rem;
-            color: var(--brand-secondary);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Quote Tool Widget */
-        .quote-widget {
-            background: linear-gradient(135deg, var(--brand-secondary), #991b1b);
-            color: white;
-            border: none;
-        }
-
-        .quote-widget .widget-title {
-            color: white;
-            border-bottom-color: rgba(255,255,255,0.3);
-        }
-
-        .quote-widget p {
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            color: rgba(255,255,255,0.8);
-        }
-
-        .quote-form input, .quote-form select {
-            width: 100%;
-            padding: 0.75rem;
-            border-radius: var(--radius-md);
-            border: none;
-            margin-bottom: 1rem;
-            font-family: var(--font-main);
-            background: rgba(255,255,255,0.95);
-        }
-
-        .quote-form .btn {
-            width: 100%;
-            background-color: var(--brand-primary);
-            color: white !important;
-        }
-        
-        .quote-form .btn:hover {
-            background-color: #1a1a1a;
-        }
-
-        /* Trending Links Widget */
-        .trending-list {
-            list-style: none;
-        }
-
-        .trending-list li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .trending-list li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .trending-list a {
-            color: var(--text-heading);
-            font-weight: 500;
-            display: block;
-            line-height: 1.4;
-        }
-
-        .trending-list a:hover {
-            color: var(--brand-secondary);
-        }
-
-        /* Article List */
-        .article-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .article-item {
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-md);
-            padding: 1.5rem;
-            transition: all 0.2s ease;
-        }
-
-        .article-item:hover {
-            border-color: var(--brand-secondary);
-            transform: translateX(5px);
-        }
-
-        .article-item h3 {
-            color: var(--text-heading);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .article-item h3 a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .article-item h3 a:hover {
-            color: var(--brand-secondary);
-        }
-
-        .article-item p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .article-item .meta {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-top: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* --- FOOTER --- */
-        .site-footer {
-            background-color: var(--brand-primary);
-            color: var(--text-muted);
-            padding: 4rem 2rem 2rem;
-            margin-top: 4rem;
-            border-top: 1px solid var(--border-light);
-        }
-
-        .footer-grid {
-            max-width: 1280px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-col h4 {
-            color: white;
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-col p {
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-links a {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .footer-disclaimer {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-light);
-            font-size: 0.75rem;
-            text-align: center;
-        }
-
-        /* --- RESPONSIVE DESIGN --- */
-        @media (max-width: 1024px) {
-            .layout-container {
-                grid-template-columns: 1fr;
-            }
-            .sidebar {
-                position: static;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .main-nav, .header-actions .btn-outline {
-                display: none;
-            }
-            .pros-cons-grid {
-                grid-template-columns: 1fr;
-            }
-            .article-title {
-                font-size: 2.5rem;
-            }
-            .article-card {
-                padding: 1.5rem;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FitPulse Pro — Training Science Without the Nonsense</title>
+<meta name="description" content="Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#0a0d0f;color:#e0f4f8;font-size:15px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #1a2e36;background:#0a0d0f}
+.nav-logo{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:700;color:#e0f4f8;letter-spacing:-0.3px}
+.nav-logo span{color:#06b6d4}
+.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:#5a8a98;font-weight:500;transition:color .2s}.nav-links a:hover{color:#06b6d4}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:500px;background:#12171a;border-bottom:1px solid #1a2e36}
+.hero-img{overflow:hidden;position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .8s;position:absolute;inset:0}
+.hero-img-ph{width:100%;height:100%;background:linear-gradient(135deg,#12171a,#1a2e36)}
+.hero-content{padding:56px 48px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#06b6d4;margin-bottom:16px}
+.hero-title{font-family:'Lora',Georgia,serif;font-size:clamp(24px,3vw,40px);font-weight:700;line-height:1.2;color:#e0f4f8;margin-bottom:16px}
+.hero-desc{font-size:15px;color:#5a8a98;line-height:1.8;margin-bottom:24px}
+.hero-cta{display:inline-block;background:#06b6d4;color:#fff;border-radius:100px;padding:12px 28px;font-size:14px;font-weight:600;align-self:flex-start;transition:background .2s}
+.hero-cta:hover{background:#0284c7}
+/* article section */
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.s-label{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;color:#e0f4f8;padding:40px 0 20px;border-bottom:2px solid #06b6d4;margin-bottom:28px}
+.bloom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px}
+.bloom-card{background:#12171a;border-radius:16px;overflow:hidden;border:1px solid #1a2e36;cursor:pointer;transition:box-shadow .25s,transform .25s}
+.bloom-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.1);transform:translateY(-4px)}
+.bloom-card img{width:100%;height:200px;object-fit:cover;display:block}
+.bloom-card-ph{width:100%;height:200px;background:linear-gradient(135deg,#0a0d0f,#1a2e36);display:block}
+.bloom-card-body{padding:20px}
+.bloom-cat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#06b6d4;margin-bottom:8px}
+.bloom-title{font-family:'Lora',Georgia,serif;font-size:17px;font-weight:700;line-height:1.3;color:#e0f4f8;margin-bottom:8px}
+.bloom-desc{font-size:13px;color:#5a8a98;line-height:1.65}
+.bloom-date{font-size:11px;color:#5a8a98;margin-top:10px}
+/* pull feature */
+.pull-feat{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#12171a;border:1px solid #1a2e36;border-radius:16px;overflow:hidden;margin-bottom:48px}
+.pull-feat img{width:100%;height:100%;object-fit:cover;min-height:300px}
+.pull-feat-body{padding:40px;display:flex;flex-direction:column;justify-content:center}
+.pull-feat-eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#06b6d4;margin-bottom:12px}
+.pull-feat-title{font-family:'Lora',Georgia,serif;font-size:26px;font-weight:700;line-height:1.25;color:#e0f4f8;margin-bottom:14px}
+.pull-feat-desc{font-size:14px;color:#5a8a98;line-height:1.8;margin-bottom:20px}
+.pull-feat-link{color:#06b6d4;font-weight:600;font-size:14px}
+/* newsletter */
+.nl-wrap{background:#12171a;border-radius:20px;border:1px solid #1a2e36;padding:52px;text-align:center;margin-bottom:48px}
+.nl-wrap h2{font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);font-weight:700;margin-bottom:10px}
+.nl-wrap p{color:#5a8a98;font-size:15px;margin-bottom:24px}
+.nl-row{display:flex;gap:10px;justify-content:center;max-width:440px;margin:0 auto}
+.nl-input{flex:1;border:1px solid #1a2e36;background:#0a0d0f;color:#e0f4f8;border-radius:100px;padding:13px 20px;font-size:14px;outline:none}
+.nl-input:focus{border-color:#06b6d4}
+.nl-btn{background:#06b6d4;color:#fff;border:none;border-radius:100px;padding:13px 24px;font-size:14px;font-weight:600;cursor:pointer}
+.nl-btn:hover{background:#0284c7}
+/* footer */
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:24px 48px;border-top:1px solid #1a2e36;font-size:12px;color:#5a8a98}
+.foot-links{display:flex;gap:20px}.foot-links a{color:#5a8a98}.foot-links a:hover{color:#06b6d4}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-img{height:320px;position:relative}.hero-img img{position:absolute}.bloom-grid{grid-template-columns:1fr 1fr}.pull-feat{grid-template-columns:1fr}.nav{padding:16px 20px}}
+@media(max-width:600px){.bloom-grid{grid-template-columns:1fr}.hero-content{padding:32px 20px}.wrap{padding:0 16px}.nl-wrap{padding:36px 16px}.nl-row{flex-direction:column}.foot{flex-direction:column;text-align:center;padding:20px 16px}}
+</style>
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="https://siavashsed.github.io/fitpulsepro" class="logo">FIT<span>PULSE</span> PRO</a>
-            
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#">Strength</a></li>
-                    <li><a href="#">Cardio</a></li>
-                    <li><a href="#">Nutrition</a></li>
-                    <li><a href="#">Recovery</a></li>
-                    <li><a href="#">Programs</a></li>
-                </ul>
-            </nav>
+<nav class="nav">
+  <div class="nav-logo">FitPulse<span>Pro</span></div>
+  <div class="nav-links">
+    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
+  </div>
+</nav>
 
-            <div class="header-actions">
-                <a href="#" class="btn btn-outline">Log In</a>
-                <a href="#workout-tool" class="btn btn-primary">Start Training</a>
-            </div>
-        </div>
-    </header>
+<div class="hero">
+  <div class="hero-img">
+    <img id="pxl-img" alt="FitPulse Pro">
+    <div class="hero-img-ph"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fitness & Training</div>
+    <h1 class="hero-title" id="hero-title">Training Science Without the Nonsense</h1>
+    <p class="hero-desc" id="hero-desc">Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.</p>
+    <a class="hero-cta" href="#" id="hero-cta">Read more →</a>
+  </div>
+</div>
 
-    <div class="layout-container">
-        
-        <main>
-            <article class="article-card">
-                
-                <div class="breadcrumb">
-                    <a href="https://siavashsed.github.io/fitpulsepro">Home</a> <span>›</span> 
-                    <a href="#">Training Guides</a> <span>›</span> 
-                    Latest Articles
-                </div>
+<div class="wrap">
+  <div class="s-label">Latest Articles</div>
+  <div class="bloom-grid" id="bloom-grid"></div>
 
-                <h1 class="article-title">SCIENCE-BASED FITNESS: NO EXCUSES, JUST RESULTS</h1>
-                
-                <div class="article-meta">
-                    <div class="author-info">
-                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=150&q=80" alt="The Editor" class="author-avatar">
-                        <div class="author-details">
-                            <h4>The Editor</h4>
-                            <p>FitPulse Pro Team • Fitness & Training</p>
-                        </div>
-                    </div>
-                    <div class="social-share">
-                        <div class="social-btn" title="Share on Twitter">𝕏</div>
-                        <div class="social-btn" title="Share on LinkedIn">in</div>
-                        <div class="social-btn" title="Copy Link">🔗</div>
-                    </div>
-                </div>
+  <div id="pull-feat-wrap"></div>
 
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Person training with barbell in gym" class="hero-image">
+  <div class="s-label">More to Read</div>
+  <div class="bloom-grid" id="more-grid"></div>
+</div>
 
-                <div class="content-body">
-                    <p>Welcome to FitPulse Pro. We cut through the noise, the fads, and the pseudoscience to bring you training methodologies that actually work. No shortcuts. No magic pills. Just evidence-based protocols backed by real research and proven by results in the gym.</p>
-                    
-                    <p>Whether you're looking to build muscle, torch fat, improve athletic performance, or simply move better, our approach is simple: follow the science, put in the work, and track your progress. Everything else is just noise.</p>
+<div class="wrap">
+  <div class="nl-wrap">
+    <h2>The Training Signal</h2>
+    <p>Weekly training insights, protocol breakdowns, and research you can actually use.</p>
+    <form id="nl-f" onsubmit="nlSub(event)">
+      <div class="nl-row">
+        <input class="nl-input" type="email" placeholder="your@email.com" required>
+        <button class="nl-btn" type="submit">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-                    <div class="toc-box">
-                        <h4>What We Cover</h4>
-                        <ul>
-                            <li><a href="#strength">1. Strength Training Fundamentals</a></li>
-                            <li><a href="#cardio">2. Cardiovascular Conditioning</a></li>
-                            <li><a href="#nutrition">3. Nutrition That Fuels Performance</a></li>
-                            <li><a href="#recovery">4. Recovery & Injury Prevention</a></li>
-                            <li><a href="#faq">5. Common Questions Answered</a></li>
-                        </ul>
-                    </div>
+<footer class="foot">
+  <span>© FitPulse Pro · Evidence-based fitness coaching and training science.</span>
+  <div class="foot-links">
+    <a href="./">Home</a><a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+  </div>
+</footer>
 
-                    <h2 id="strength">1. Strength Training Fundamentals</h2>
-                    <p>Progressive overload isn't optional—it's the law. If you're not tracking your lifts and systematically increasing volume or intensity over time, you're leaving gains on the table. The compound movements (squat, deadlift, bench, row, overhead press) should form the foundation of any serious program.</p>
-
-                    <div class="alert alert-info">
-                        <h4>💪 No-BS Principle</h4>
-                        <p>Stop chasing the pump. Focus on getting stronger in the 4-8 rep range on compound lifts. Hypertrophy follows strength. The bodybuilders who look the most impressive are almost always the strongest in the gym.</p>
-                    </div>
-
-                    <h3>Program Selection: What Actually Matters</h3>
-                    <div class="pros-cons-grid">
-                        <div class="pc-card pros">
-                            <h4>What Works</h4>
-                            <ul>
-                                <li>Consistent training frequency (3-5 days/week)</li>
-                                <li>Progressive overload tracked in a logbook</li>
-                                <li>Compound movements as program foundation</li>
-                                <li>Adequate protein intake (0.7-1g per lb bodyweight)</li>
-                            </ul>
-                        </div>
-                        <div class="pc-card cons">
-                            <h4>What's Wasting Your Time</h4>
-                            <ul>
-                                <li>Program hopping every 2 weeks</li>
-                                <li>Chasing soreness as a progress indicator</li>
-                                <li>Overcomplicating periodization as a beginner</li>
-                                <li>Spending more on supplements than food</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h2 id="cardio">2. Cardiovascular Conditioning</h2>
-                    <p>Cardio doesn't kill gains—poor programming does. Zone 2 work builds your aerobic base and improves recovery between sets. High-intensity intervals improve VO2 max and metabolic conditioning. Both have their place depending on your goals.</p>
-
-                    <p>Stop skipping cardio because some influencer said it's catabolic. A well-conditioned lifter recovers faster, performs better, and lives longer. Do 150 minutes of moderate cardio per week minimum. Your heart is also a muscle.</p>
-
-                    <h3>Cardio Methods Comparison</h3>
-                    
-                    <div class="table-responsive">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Method</th>
-                                    <th>Duration</th>
-                                    <th>Best For</th>
-                                    <th>Recovery Impact</th>
-                                    <th>Verdict</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Zone 2 (Low Intensity)</strong></td>
-                                    <td>30-60 min</td>
-                                    <td>Fat oxidation, aerobic base</td>
-                                    <td>
+<script>
+async function loadPosts(){
+  try{
+    var r=await fetch('./articles.json');if(!r.ok)throw 0;
+    var posts=await r.json();if(!posts||!posts.length)throw 0;
+    /* hero */
+    var h=posts[0];
+    if(h.image){var hi=document.getElementById('pxl-img');if(hi){hi.onload=function(){hi.style.opacity='1';};hi.src=h.image;}}
+    var ht=document.getElementById('hero-title'),hd=document.getElementById('hero-desc'),hc=document.getElementById('hero-cta');
+    if(ht)ht.innerHTML='<a href="./'+h.slug+'/" style="color:inherit">'+h.title+'</a>';
+    if(hd)hd.textContent=h.meta_description||'';
+    if(hc)hc.href='./'+h.slug+'/';
+    /* card fn */
+    function card(p){return '<a href="./'+p.slug+'/" style="display:block"><div class="bloom-card">'+(p.image?'<img src="'+p.image+'" alt="'+p.title+'" loading="lazy">':'<div class="bloom-card-ph"></div>')+'<div class="bloom-card-body"><div class="bloom-cat">Fitness & Training</div><div class="bloom-title">'+p.title+'</div><div class="bloom-desc">'+(p.meta_description||'').slice(0,110)+'</div><div class="bloom-date">'+(p.date_iso||'')+'</div></div></div></a>';}
+    var bg=document.getElementById('bloom-grid');if(bg)bg.innerHTML=posts.slice(1,4).map(card).join('');
+    /* pull feature */
+    if(posts[4]){
+      var pf=document.getElementById('pull-feat-wrap');
+      if(pf)pf.innerHTML='<a href="./'+posts[4].slug+'/" style="display:block"><div class="pull-feat">'+(posts[4].image?'<img src="'+posts[4].image+'" alt="'+posts[4].title+'" loading="lazy">':'')+'<div class="pull-feat-body"><div class="pull-feat-eyebrow">Fitness & Training</div><div class="pull-feat-title">'+posts[4].title+'</div><div class="pull-feat-desc">'+(posts[4].meta_description||'').slice(0,160)+'</div><span class="pull-feat-link">Read full article →</span></div></div></a>';
+    }
+    var mg=document.getElementById('more-grid');if(mg)mg.innerHTML=posts.slice(5,8).map(card).join('');
+  }catch(e){
+    var bg2=document.getElementById('bloom-grid');
+    if(bg2)bg2.innerHTML='<div class="bloom-card"><div class="bloom-card-ph"></div><div class="bloom-card-body"><div class="bloom-cat">Fitness & Training</div><div class="bloom-title">First articles coming soon</div><div class="bloom-desc">Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.</div></div></div>';
+  }
+}
+function nlSub(e){e.preventDefault();document.getElementById('nl-f').innerHTML='<p style="color:#06b6d4;font-weight:600;font-size:15px;padding:12px 0">✓ Welcome to the community!</p>';}
+loadPosts();
+/* banner loader: pexels → picsum fallback */
+(function(){
+  var el=document.getElementById('pxl-img');
+  var cr=document.getElementById('pxl-cred');
+  if(!el)return;
+  function showImg(src,cred){
+    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
+    el.src=src;
+  }
+  var k=localStorage.getItem('pexelsKey');
+  if(k){
+    fetch('https://api.pexels.com/v1/search?query='+encodeURIComponent('gym workout fitness training exercise')+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
+      .then(function(r){return r.json();}).then(function(d){
+        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
+        else{showImg('https://picsum.photos/seed/407/1400/400','');}
+      }).catch(function(){showImg('https://picsum.photos/seed/407/1400/400','');});
+  }else{
+    showImg('https://picsum.photos/seed/407/1400/400','');
+  }
+})();
+</script>
+</body></html>
