@@ -30,7 +30,7 @@ img{max-width:100%;display:block}
 .nav-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:60px;gap:32px}
 .nav-logo{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.02em}
 .nav-logo span{color:var(--green)}
-.nav-links{display:flex;gap:0;flex:1}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
 .nav-links a{font-size:13px;font-weight:500;padding:0 14px;height:60px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
 .nav-links a:hover{color:var(--text)}
 .nav-track{margin-left:auto;background:var(--green);color:#000;font-size:13px;font-weight:700;padding:8px 18px;border-radius:4px;transition:background .15s}
@@ -293,6 +293,15 @@ const PLACEHOLDER_ARTS=[
   {title:"Hip Mobility Routine: 15 Minutes That Will Change Your Squat",slug:"hip-mobility-squat",cat:"workout",excerpt:"Most squat problems start at the hip. This daily routine addresses the three mobility restrictions that kill depth.",mins:6},
 ];
 
+const IMGS=[
+  'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=75',
+  'https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=600&q=75',
+  'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=75',
+  'https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=600&q=75',
+  'https://images.unsplash.com/photo-1486218119243-13883505764c?w=600&q=75',
+  'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=75',
+];
+
 let arts=[];
 let activeFilter="all";
 
@@ -305,9 +314,9 @@ function setFilter(f){
 function renderGrid(){
   const g=document.getElementById("artGrid");
   const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
-  g.innerHTML=filtered.slice(0,6).map(a=>`
+  g.innerHTML=filtered.slice(0,6).map((a,i)=>`
     <a href="./${a.slug}/" class="art-card">
-      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=70" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
+      <div class="art-card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
       <div class="art-card-body">
         <h3 class="art-title">${a.title}</h3>
         <p class="art-excerpt">${a.excerpt}</p>
@@ -325,9 +334,9 @@ function renderLog(items){
 }
 
 function renderMore(){
-  document.getElementById("moreGrid").innerHTML=arts.slice(6,9).map(a=>`
+  document.getElementById("moreGrid").innerHTML=arts.slice(6,9).map((a,i)=>`
     <a href="./${a.slug}/" class="art-card">
-      <div class="art-card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=70" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
+      <div class="art-card-img"><img src="${IMGS[(i+3)%IMGS.length]}" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
       <div class="art-card-body">
         <h3 class="art-title">${a.title}</h3>
         <p class="art-excerpt">${a.excerpt}</p>
