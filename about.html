@@ -1,91 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About  -  FitPulse Pro</title>
-<meta name="description" content="Evidence-based fitness coaching and training science.">
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About - FitPulse Pro</title>
+<meta name="description" content="About FitPulse Pro: Evidence-based fitness coaching and training science.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',system-ui,sans-serif;background:#0a0d0f;color:#e0f4f8;font-size:15px;line-height:1.75}
-a{color:#06b6d4;text-decoration:none}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #1a2e36}
-.nav-logo{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;color:#e0f4f8}
-.nav-links{display:flex;gap:20px}.nav-links a{font-size:13px;color:#5a8a98;font-weight:500}
-.banner{background:#12171a;border-bottom:1px solid #1a2e36;padding:52px 48px;text-align:center}
-.banner h1{font-family:'Lora',Georgia,serif;font-size:clamp(26px,5vw,48px);font-weight:700;color:#e0f4f8;margin-bottom:8px}
-.banner p{color:#5a8a98;font-size:16px}
-.pxl{height:200px;overflow:hidden}.pxl img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block}
-.wrap{max-width:700px;margin:0 auto;padding:52px 24px}
-.avi{width:80px;height:80px;border-radius:50%;background:#06b6d4;color:#fff;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
-.abt-p{color:#5a8a98;line-height:1.9;margin-bottom:16px}
-h2{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:700;margin:36px 0 12px;color:#e0f4f8}
-.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 48px;border-top:1px solid #1a2e36;font-size:12px;color:#5a8a98}
-.foot-links{display:flex;gap:16px}.foot-links a{color:#5a8a98}
-@media(max-width:600px){.nav,.foot{padding:16px 20px;flex-direction:column;text-align:center}.banner{padding:36px 20px}.wrap{padding:36px 16px}}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0a;
+  --bg2:#111;
+  --bg3:#1a1a1a;
+  --green:#22c55e;
+  --green2:#16a34a;
+  --text:#f5f5f5;
+  --muted:#888;
+  --border:#222;
+  --font:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+.site-nav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:60px;gap:32px}
+.nav-logo{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.nav-logo span{color:var(--green)}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
+.nav-links a{font-size:13px;font-weight:500;padding:0 14px;height:60px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--text)}
+.nav-track{margin-left:auto;background:var(--green);color:#000;font-size:13px;font-weight:700;padding:8px 18px;border-radius:4px;transition:background .15s}
+.nav-track:hover{background:var(--green2)}
+
+/* HERO - journal / log style */
+.hero{padding:0;background:var(--bg)}
+.hero-top{background:var(--green);padding:8px 0;text-align:center}
+.hero-top-text{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#000}
+.hero-main{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:start}
+.hero-left{}
+.hero-date{font-size:12px;font-weight:600;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.hero-date::before{content:"";width:8px;height:8px;background:var(--green);border-radius:50%}
+.hero-h1{font-size:clamp(40px,5vw,64px);font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--text);margin-bottom:16px}
+.hero-h1 em{color:var(--green);font-style:normal}
+.hero-desc{font-size:15px;color:var(--muted);max-width:460px;margin-bottom:28px;line-height:1.8}
+.hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.hero-tag{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--bg3);padding:5px 12px;border-radius:3px;border:1px solid var(--border)}
+.hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#000;font-size:14px;font-weight:700;padding:12px 24px;border-radius:4px;transition:background .15s}
+.hero-cta:hover{background:var(--green2)}
+.hero-right{}
+.today-log{background:var(--bg2);border:1px solid var(--border);border-top:3px solid var(--green)}
+.today-log-head{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.today-log-title{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text)}
+.today-log-badge{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green);background:rgba(34,197,94,.1);padding:3px 8px;border-radius:2px}
+.log-items{padding:8px 0}
+.log-item{padding:12px 20px;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;transition:background .15s;cursor:pointer}
+.log-item:last-child{border-bottom:none}
+.log-item:hover{background:var(--bg3)}
+.log-item-title{font-size:14px;font-weight:600;color:var(--text);display:block}
+.log-item-cat{font-size:11px;color:var(--muted);margin-top:2px;display:block}
+.log-item-time{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+
+/* SECTION STRUCTURE */
+.section{padding:48px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.sec-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.sec-title{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.sec-title::before{content:"";width:4px;height:20px;background:var(--green);display:block}
+.sec-more{font-size:13px;font-weight:600;color:var(--green);transition:opacity .15s}
+.sec-more:hover{opacity:.7}
+
+/* ARTICLE GRID - workout log cards */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.art-card{background:var(--bg2);border:1px solid var(--border);overflow:hidden;transition:border-color .2s}
+.art-card:hover{border-color:var(--green)}
+.art-card-img{aspect-ratio:16/9;background:var(--bg3);overflow:hidden;position:relative}
+.art-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.art-card:hover .art-card-img img{transform:scale(1.03)}
+.art-card-badge{position:absolute;top:12px;left:12px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--green);color:#000;padding:3px 8px}
+.art-card-body{padding:16px}
+.art-title{font-size:16px;font-weight:700;color:var(--text);line-height:1.35;letter-spacing:-.01em;margin-bottom:6px;transition:color .15s}
+.art-card:hover .art-title{color:var(--green)}
+.art-excerpt{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.art-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+
+/* CHALLENGE SECTION */
+.challenge{background:var(--green);padding:48px 0}
+.challenge-in{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.challenge-text{}
+.challenge-eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(0,0,0,.5);margin-bottom:10px}
+.challenge-title{font-size:clamp(28px,4vw,44px);font-weight:700;letter-spacing:-.03em;color:#000;line-height:1.1;margin-bottom:14px}
+.challenge-body{font-size:14px;color:rgba(0,0,0,.65);line-height:1.8;margin-bottom:24px}
+.challenge-btn{background:#000;color:var(--green);font-size:14px;font-weight:700;padding:12px 24px;border-radius:4px;display:inline-block;transition:opacity .15s}
+.challenge-btn:hover{opacity:.85}
+.challenge-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.challenge-stat{background:rgba(0,0,0,.12);padding:20px;border-radius:4px}
+.challenge-stat-num{font-size:36px;font-weight:700;color:#000;letter-spacing:-.04em;display:block}
+.challenge-stat-label{font-size:12px;color:rgba(0,0,0,.55);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+/* FILTER TABS */
+.filter-wrap{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.filter-btn{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--bg3);border:1px solid var(--border);padding:6px 16px;cursor:pointer;transition:all .15s}
+.filter-btn:hover,.filter-btn.active{background:var(--green);border-color:var(--green);color:#000}
+
+/* NEWSLETTER */
+.newsletter{background:var(--bg2);border-top:1px solid var(--border);padding:60px 0}
+.nl-in{max-width:480px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-icon{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.nl-icon svg{width:24px;height:24px;fill:#000}
+.nl-title{font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-.03em;margin-bottom:8px}
+.nl-sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+.nl-form{display:flex;gap:0;border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.nl-input{flex:1;background:transparent;border:none;color:var(--text);font-size:14px;font-family:var(--font);padding:12px 16px;outline:none}
+.nl-input::placeholder{color:var(--muted)}
+.nl-btn{background:var(--green);color:#000;font-size:13px;font-weight:700;padding:12px 20px;border:none;cursor:pointer;font-family:var(--font);transition:background .15s}
+.nl-btn:hover{background:var(--green2)}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 0 20px}
+.footer-in{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:24px}
+.footer-logo{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-.02em;margin-bottom:8px}
+.footer-logo span{color:var(--green)}
+.footer-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.footer-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.footer-links a{font-size:13px;color:var(--muted);transition:color .15s}
+.footer-links a:hover{color:var(--green)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:20px 24px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:var(--muted)}
+
+@media(max-width:900px){
+  .hero-main{grid-template-columns:1fr}
+  .today-log{display:none}
+  .art-grid{grid-template-columns:1fr 1fr}
+  .challenge-in{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .art-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .footer-in{grid-template-columns:1fr}
+}
+/* page */
+.ab{max-width:840px;margin:0 auto;padding:56px 24px 88px}
+.ab-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#06b6d4;margin-bottom:14px}
+.ab-title{font-family:system-ui,sans-serif;font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.15;color:#e0f4f8;margin:0 0 16px}
+.ab-lead{font-size:17px;line-height:1.7;color:#5a8a98;margin-bottom:40px}
+.ab-author{display:flex;gap:16px;align-items:center;background:#12171a;border:1px solid #1a2e36;border-radius:10px;padding:20px 22px;margin-bottom:32px}
+.ab-avatar{width:56px;height:56px;border-radius:50%;background:#06b6d4;color:#0a0d0f;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ab-name{font-size:17px;font-weight:700;color:#e0f4f8}
+.ab-role{font-size:13px;color:#06b6d4;font-weight:600;margin-top:2px}
+.ab-h2{font-family:system-ui,sans-serif;font-size:20px;font-weight:700;color:#e0f4f8;margin:40px 0 14px}
+.ab-p{font-size:15px;line-height:1.85;color:#5a8a98;margin-bottom:14px}
+.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:14px}
+.ab-card{background:#12171a;border:1px solid #1a2e36;border-radius:10px;padding:18px}
+.ab-card-av{width:38px;height:38px;border-radius:50%;background:#06b6d4;color:#0a0d0f;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.ab-card-name{font-size:14px;font-weight:700;color:#e0f4f8}
+.ab-card-role{font-size:11px;font-weight:600;color:#06b6d4;margin:2px 0 7px}
+.ab-card-bio{font-size:12px;line-height:1.65;color:#5a8a98}
+.ab-cta{margin-top:44px;background:#12171a;border:1px solid #1a2e36;border-radius:12px;padding:30px 26px;text-align:center}
+.ab-cta h3{font-family:system-ui,sans-serif;font-size:19px;font-weight:700;color:#e0f4f8;margin:0 0 8px}
+.ab-cta p{font-size:14px;color:#5a8a98;margin:0 0 18px}
+.ab-cta a{display:inline-block;background:#06b6d4;color:#0a0d0f;padding:11px 28px;border-radius:7px;font-size:14px;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="nav-logo">FitPulse Pro</div>
-  <div class="nav-links"><a href="./">Home</a><a href="about.html">About</a></div>
+<nav class="site-nav">
+  <div class="nav-in">
+    <a href="./" class="nav-logo">FitPulse<span>Pro</span></a>
+    <div class="nav-links">
+      <a href="./">Workouts</a>
+      <a href="./">Programs</a>
+      <a href="./">Nutrition</a>
+      <a href="./">Recovery</a>
+      <a href="./">Gear</a>
+    </div>
+    <a href="./" class="nav-track">Start Training</a>
+  </div>
 </nav>
-<div class="banner">
-  <h1>About FitPulse Pro</h1>
-  <p>Training Science Without the Nonsense</p>
-</div>
-<div class="pxl"><img id="pxl-img" alt=""></div>
-<div class="wrap">
-  <div class="avi">CMW</div>
-  <h2 style="text-align:center">Coach Marcus Webb</h2>
-  <p style="text-align:center;color:#06b6d4;font-weight:600;margin-bottom:28px">NASM-Certified Personal Trainer</p>
-  <p class="abt-p">I started training seriously in college, not because I was competitive, but because I was frustrated. I was putting in hours and not seeing results, and I needed to understand why. That frustration sent me down a research rabbit hole that eventually became a career.</p>
-    <p class="abt-p">I got certified and started coaching clients while still finishing my degree. My early clients were mostly regular people with busy lives who wanted to look and feel better - not athletes, not competitors, just people trying to get real results from training. Understanding what works for that population is its own discipline.</p>
-    <p class="abt-p">Twelve years on the gym floor has given me a clear picture of what actually drives results versus what looks good in a training video. Most people overtrain specific muscles and underload basic movement patterns. Most people track the wrong variables. Most people stop progressing not because they need a new program but because they need to execute the basics better.</p>
-    <p class="abt-p">The fitness industry has a serious credibility problem. Advice is dominated by people selling products, people with unusual genetics presenting their experience as universally applicable, and people who have never coached a real client outside a controlled environment.</p>
-    <p class="abt-p">FitPulse Pro is the signal. Every recommendation is grounded in what the research says and confirmed by what I have seen across thousands of client results. No products to sell, no affiliations that bias my recommendations.</p>
-  <h2>Our Mission</h2>
-  <p class="abt-p">Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.</p>
-  <p style="margin-top:32px"><a href="./">← Back to FitPulse Pro</a></p>
-</div>
-<footer class="foot">
-  <span>© FitPulse Pro · Evidence-based fitness coaching and training science.</span>
-  <div class="foot-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+<main class="ab">
+  <div class="ab-kicker">About FitPulse Pro</div>
+  <h1 class="ab-title">Training Science Without the Nonsense</h1>
+  <p class="ab-lead">Training science that holds up in the real world - backed by research, confirmed by 12 years of coaching results.</p>
+  <div class="ab-author">
+    <div class="ab-avatar">CM</div>
+    <div>
+      <div class="ab-name">Coach Marcus Webb</div>
+      <div class="ab-role">NASM-Certified Personal Trainer</div>
+    </div>
+  </div>
+  <div class="ab-h2">Why this site exists</div>
+  <p class="ab-p">I started training seriously in college, not because I was competitive, but because I was frustrated. I was putting in hours and not seeing results, and I needed to understand why. That frustration sent me down a research rabbit hole that eventually became a career.</p>
+    <p class="ab-p">I got certified and started coaching clients while still finishing my degree. My early clients were mostly regular people with busy lives who wanted to look and feel better - not athletes, not competitors, just people trying to get real results from training. Understanding what works for that population is its own discipline.</p>
+    <p class="ab-p">Twelve years on the gym floor has given me a clear picture of what actually drives results versus what looks good in a training video. Most people overtrain specific muscles and underload basic movement patterns. Most people track the wrong variables. Most people stop progressing not because they need a new program but because they need to execute the basics better.</p>
+    <p class="ab-p">The fitness industry has a serious credibility problem. Advice is dominated by people selling products, people with unusual genetics presenting their experience as universally applicable, and people who have never coached a real client outside a controlled environment.</p>
+    <p class="ab-p">FitPulse Pro is the signal. Every recommendation is grounded in what the research says and confirmed by what I have seen across thousands of client results. No products to sell, no affiliations that bias my recommendations.</p>
+  <div class="ab-h2">Who contributes</div>
+  <p class="ab-p">Alongside Coach Marcus Webb, a small group of practitioners review and pressure-test what gets published here.</p>
+  <div class="ab-grid">
+      <div class="ab-card">
+        <div class="ab-card-av">MW</div>
+        <div class="ab-card-name">Marcus Webb</div>
+        <div class="ab-card-role">Senior Contributor</div>
+        <div class="ab-card-bio">15 years in institutional sales at two major banks. Writes about macro dynamics and how they translate to retail positioning.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">SR</div>
+        <div class="ab-card-name">Sofia Reyes</div>
+        <div class="ab-card-role">Editorial Contributor</div>
+        <div class="ab-card-bio">Spent eight years as a financial journalist before going independent. Strong background in regulatory and policy reporting.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">AO</div>
+        <div class="ab-card-name">Amara Okafor</div>
+        <div class="ab-card-role">Strategy Contributor</div>
+        <div class="ab-card-bio">Portfolio manager background. Writes about position sizing, risk management, and the behavioral side of long-term investing.</div>
+      </div>
+  </div>
+  <div class="ab-cta">
+    <h3>The Training Signal</h3>
+    <p>Weekly training insights, protocol breakdowns, and research you can actually use.</p>
+    <a href="./">Read the latest</a>
+  </div>
+</main>
+<footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-logo">FitPulse<span>Pro</span></div>
+      <p class="footer-desc">No BS fitness programming for real people with real goals and limited time.</p>
+    </div>
+    <div>
+      <div class="footer-head">Training</div>
+      <div class="footer-links">
+        <a href="./">Workout Plans</a>
+        <a href="./">HIIT Programs</a>
+        <a href="./">Strength Training</a>
+        <a href="./">Home Workouts</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Nutrition</div>
+      <div class="footer-links">
+        <a href="./">Meal Prep</a>
+        <a href="./">Macros Guide</a>
+        <a href="./">Supplements</a>
+        <a href="./">Pre/Post Workout</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-head">Site</div>
+      <div class="footer-links">
+        <a href="./about/">About</a>
+        <a href="./">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 FitPulsePro. All rights reserved.</div>
+    <div class="footer-copy">Real fitness for real people.</div>
+  </div>
 </footer>
-<script>/* banner loader: pexels → unsplash → picsum */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  var SOURCES=['pexels', 'unsplash'];
-  var Q=encodeURIComponent('gym workout fitness training exercise');
-  var FALLBACK='https://picsum.photos/seed/201/1400/400';
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  function tryUnsplash(){
-    var uk=localStorage.getItem('unsplashKey');
-    if(!uk){showImg(FALLBACK,'');return;}
-    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
-      .then(function(r){return r.json();}).then(function(d){
-        var p=Array.isArray(d)?d[0]:d;
-        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){showImg(FALLBACK,'');});
-  }
-  function tryPexels(){
-    var k=localStorage.getItem('pexelsKey');
-    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
-    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
-  }
-  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
-  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-  else{showImg(FALLBACK,'');}
-})();</script>
-</body></html>
+
+<script>
+const PLACEHOLDER_ARTS=[
+  {title:"The 5x5 Strength Program: A Beginner's Complete Guide",slug:"5x5-strength-program",cat:"program",excerpt:"Simple, proven, effective. The 5x5 is the most reliable path to a stronger baseline for new lifters.",mins:10},
+  {title:"How to Structure a Week of Training Without Burning Out",slug:"weekly-training-structure",cat:"workout",excerpt:"The push-pull-legs vs. upper-lower debate ends here. The right answer depends on your schedule, not ideology.",mins:7},
+  {title:"Creatine in 2025: What the Research Actually Says",slug:"creatine-guide-2025",cat:"nutrition",excerpt:"Monohydrate still wins. Loading vs. maintenance dose, timing myths, and the one thing most guides get wrong.",mins:6},
+  {title:"Why Your Recovery Is Limiting Your Gains More Than Your Training",slug:"recovery-gains",cat:"recovery",excerpt:"You don't grow in the gym. Understand the adaptation window and stop leaving results on the floor.",mins:8},
+  {title:"Progressive Overload: The Only Principle That Matters",slug:"progressive-overload",cat:"workout",excerpt:"More weight, more reps, more sets, less rest - the four levers of progressive overload and how to use them.",mins:9},
+  {title:"The Best Budget Home Gym Setup Under $500 in 2025",slug:"budget-home-gym-2025",cat:"gear",excerpt:"Squat rack, barbell, plates, pull-up bar. The minimal setup that covers 95% of effective training.",mins:7},
+  {title:"How Much Protein Do You Actually Need Per Day?",slug:"daily-protein-requirements",cat:"nutrition",excerpt:"The 1g/lb guideline is a ceiling, not a floor. The data on 0.7g/lb and why more isn't always better.",mins:5},
+  {title:"Hip Mobility Routine: 15 Minutes That Will Change Your Squat",slug:"hip-mobility-squat",cat:"workout",excerpt:"Most squat problems start at the hip. This daily routine addresses the three mobility restrictions that kill depth.",mins:6},
+];
+
+const IMGS=[
+  'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=75',
+  'https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=600&q=75',
+  'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=75',
+  'https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=600&q=75',
+  'https://images.unsplash.com/photo-1486218119243-13883505764c?w=600&q=75',
+  'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=75',
+];
+
+let arts=[];
+let activeFilter="all";
+
+function setFilter(f){
+  activeFilter=f;
+  document.querySelectorAll(".filter-btn").forEach(b=>b.classList.toggle("active",b.textContent.toLowerCase()===f||(f==="all"&&b.textContent==="All")));
+  renderGrid();
+}
+
+function renderGrid(){
+  const g=document.getElementById("artGrid");
+  const filtered=activeFilter==="all"?arts:arts.filter(a=>a.cat===activeFilter);
+  g.innerHTML=filtered.slice(0,6).map((a,i)=>`
+    <a href="./${a.slug}/" class="art-card">
+      <div class="art-card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
+      <div class="art-card-body">
+        <h3 class="art-title">${a.title}</h3>
+        <p class="art-excerpt">${a.excerpt}</p>
+        <div class="art-meta"><span>${a.mins} min read</span><span>Read &rarr;</span></div>
+      </div>
+    </a>`).join("");
+}
+
+function renderLog(items){
+  document.getElementById("logItems").innerHTML=items.slice(0,5).map((a,i)=>`
+    <a href="./${a.slug}/" class="log-item">
+      <span><span class="log-item-title">${a.title}</span><span class="log-item-cat">${a.cat}</span></span>
+      <span class="log-item-time">${a.mins}m</span>
+    </a>`).join("");
+}
+
+function renderMore(){
+  document.getElementById("moreGrid").innerHTML=arts.slice(6,9).map((a,i)=>`
+    <a href="./${a.slug}/" class="art-card">
+      <div class="art-card-img"><img src="${IMGS[(i+3)%IMGS.length]}" alt="${a.title}" loading="lazy"><span class="art-card-badge">${a.cat}</span></div>
+      <div class="art-card-body">
+        <h3 class="art-title">${a.title}</h3>
+        <p class="art-excerpt">${a.excerpt}</p>
+        <div class="art-meta"><span>${a.mins} min read</span></div>
+      </div>
+    </a>`).join("");
+}
+
+async function load(){
+  try{
+    const r=await fetch("./articles.json");
+    if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}
+  }catch{arts=PLACEHOLDER_ARTS;}
+  renderGrid();
+  renderLog(arts);
+  renderMore();
+}
+load();
+</script>
+</body>
+</html>
