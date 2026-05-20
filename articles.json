@@ -10,7 +10,8 @@
     "outbound_links": [
       "nsca.com"
     ],
-    "syndicated_from": "sportiqpro"
+    "syndicated_from": "sportiqpro",
+    "category": "Strength Training"
   },
   {
     "title": "Linear vs Undulating vs Block Periodization: Which Model Actually Builds Better Athletes",
@@ -24,7 +25,8 @@
       "nsca.com",
       "journals.lww.com"
     ],
-    "syndicated_from": "sportiqpro"
+    "syndicated_from": "sportiqpro",
+    "category": "Strength Training"
   },
   {
     "title": "How to Program Deload Weeks Without Losing Your Strength Gains",
@@ -38,6 +40,7 @@
       "nsca.com",
       "journals.lww.com"
     ],
-    "syndicated_from": "sportiqpro"
+    "syndicated_from": "sportiqpro",
+    "category": "Strength Training"
   }
 ]
