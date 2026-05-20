@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1453",
+    "name": "Marcus T.",
+    "initials": "MT",
+    "color": "#ec4899",
+    "date_iso": "2026-05-20",
+    "date_display": "May 20, 2026",
+    "text": "Been doing heavy squats for years and never thought plyos would help, but adding box jumps on my off days actually improved my bar speed. This article nails it about recovery between sessions.",
+    "likes": 8
+  },
+  {
+    "id": "c2309",
+    "name": "Sarah K.",
+    "initials": "SK",
+    "color": "#ef4444",
+    "date_iso": "2026-05-23",
+    "date_display": "May 23, 2026",
+    "text": "Question: how many weeks of plyo work should you do before cycling back to pure strength? I'm worried about overuse injuries with my shoulders.",
+    "likes": 5
+  },
+  {
+    "id": "c3399",
+    "name": "James R.",
+    "initials": "JR",
+    "color": "#f97316",
+    "date_iso": "2026-05-26",
+    "date_display": "May 26, 2026",
+    "text": "Honestly tried stacking too much explosive work with my deadlifts and ended up with tendinitis. The burnout section in this article is spot on, wish I'd read it sooner.",
+    "likes": 11
+  },
+  {
+    "id": "c4926",
+    "name": "Priya M.",
+    "initials": "PM",
+    "color": "#f59e0b",
+    "date_iso": "2026-06-01",
+    "date_display": "Jun 1, 2026",
+    "text": "Love that this addresses heavy lifters specifically instead of just throwing generic plyometrics at everyone. The programming tips are practical.",
+    "likes": 7
+  },
+  {
+    "id": "c5988",
+    "name": "Derek C.",
+    "initials": "DC",
+    "color": "#a78bfa",
+    "date_iso": "2026-06-03",
+    "date_display": "Jun 3, 2026",
+    "text": "The jump rope suggestion seems random? I've always felt it doesn't transfer well to bench press power compared to med ball work.",
+    "likes": 3
+  }
+]
