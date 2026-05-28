@@ -42,5 +42,64 @@
     ],
     "syndicated_from": "sportiqpro",
     "category": "Strength Training"
+  },
+  {
+    "title": "The Peloton Tread+ Recall of 2021: What It Actually Meant for Home Fitness Safety",
+    "slug": "peloton-tread-recall-2021-fitness-safety",
+    "meta_description": "The 2021 Peloton Tread+ recall shook the home fitness world. Coach Rachel Stone breaks down what really happened and what it means for your training setup.",
+    "date": "March 09, 2021",
+    "date_iso": "2021-03-09",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/3931296/pexels-photo-3931296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cpsc.gov",
+      "statista.com",
+      "reuters.com"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Whoop 4.0 in 2022: Why This Wearable Finally Made Recovery a Training Priority",
+    "slug": "whoop-4-recovery-wearable-2022",
+    "meta_description": "Whoop 4.0 launched and changed how athletes track recovery in 2022. Coach Rachel Stone breaks down what it means for real training decisions.",
+    "date": "August 17, 2022",
+    "date_iso": "2022-08-17",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/35342402/pexels-photo-35342402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "whoop.com",
+      "ncbi.nlm.nih.gov",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Home Fitness Explosion of 2020: What Peloton's Surge Really Revealed About How We Train",
+    "slug": "peloton-home-fitness-boom-2020",
+    "meta_description": "Peloton's 2020 boom wasn't just a sales story. Coach Rachel Stone breaks down what the connected fitness surge meant for real training outcomes.",
+    "date": "August 09, 2020",
+    "date_iso": "2020-08-09",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/17013012/pexels-photo-17013012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "wsj.com",
+      "pubmed.ncbi.nlm.nih.gov",
+      "businessofapps.com",
+      "acsm.org",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
