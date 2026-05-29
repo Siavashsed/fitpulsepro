@@ -59,7 +59,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Gear & Setup"
   },
   {
     "title": "Whoop 4.0 in 2022: Why This Wearable Finally Made Recovery a Training Priority",
@@ -77,7 +78,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "The Home Fitness Explosion of 2020: What Peloton's Surge Really Revealed About How We Train",
@@ -97,7 +99,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "Sleep and Fitness: Why 7 Hours Beats Two-a-Day Training Every Time",
@@ -114,7 +117,8 @@
     "posted_iso": "2026-05-29",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Recovery"
   },
   {
     "title": "WHOOP 3.0 Launched in 2019 and Changed How Athletes Think About Recovery",
@@ -133,6 +137,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   }
 ]
