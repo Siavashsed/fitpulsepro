@@ -98,5 +98,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Sleep and Fitness: Why 7 Hours Beats Two-a-Day Training Every Time",
+    "slug": "sleep-fitness-7-hours-training",
+    "meta_description": "Coach Rachel Stone explains why quality sleep outperforms extra training sessions for fitness gains, recovery, and performance. Backed by real data.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/7445322/pexels-photo-7445322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "jamanetwork.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "WHOOP 3.0 Launched in 2019 and Changed How Athletes Think About Recovery",
+    "slug": "whoop-3-recovery-tracker-2019",
+    "meta_description": "WHOOP 3.0 launched in 2019 and shifted how serious athletes track recovery. Here's what it meant for training science and whether it actually delivered.",
+    "date": "November 27, 2019",
+    "date_iso": "2019-11-27",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/4426515/pexels-photo-4426515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "whoop.com",
+      "ncbi.nlm.nih.gov",
+      "statista.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
