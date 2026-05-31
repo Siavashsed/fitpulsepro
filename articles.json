@@ -139,5 +139,42 @@
       "en"
     ],
     "category": "Strength Training"
+  },
+  {
+    "title": "Gym Anxiety: The Honest Advice Nobody Actually Gives Beginners",
+    "slug": "gym-anxiety-honest-advice-beginners",
+    "meta_description": "Coach Rachel Stone cuts through the fluff on gym anxiety with real, science-backed advice beginners never hear but desperately need.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/3888104/pexels-photo-3888104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "ncbi.nlm.nih.gov",
+      "cdc.gov",
+      "gympass.com"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The WHOOP 4.0 Recovery Revolution of 2022: What It Actually Changed for Serious Athletes",
+    "slug": "whoop-4-recovery-wearable-2022-2",
+    "meta_description": "Coach Rachel Stone on how WHOOP 4.0 reshaped athlete recovery tracking in 2022 - and why the data matters more than the hype.",
+    "date": "February 15, 2022",
+    "date_iso": "2022-02-15",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/34085834/pexels-photo-34085834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "journals.lww.com"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
