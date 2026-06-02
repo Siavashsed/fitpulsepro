@@ -157,7 +157,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "The WHOOP 4.0 Recovery Revolution of 2022: What It Actually Changed for Serious Athletes",
@@ -175,6 +176,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "HIIT & Conditioning"
   }
 ]
