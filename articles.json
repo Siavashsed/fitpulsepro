@@ -178,5 +178,41 @@
       "en"
     ],
     "category": "HIIT & Conditioning"
+  },
+  {
+    "title": "Fixing Anterior Pelvic Tilt: The Lower Back Pain Corrective Routine That Actually Works",
+    "slug": "anterior-pelvic-tilt-lower-back-pain-fix",
+    "meta_description": "Coach Rachel Stone's no-BS corrective exercise routine for anterior pelvic tilt and lower back pain. Real exercises, real results.",
+    "date": "June 07, 2026",
+    "date_iso": "2026-06-07",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/6582587/pexels-photo-6582587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-06-07",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "How the 2020 Home Fitness Boom Rewrote the Rules of Personal Training",
+    "slug": "home-fitness-boom-2020-training",
+    "meta_description": "Coach Rachel Stone on how the 2020 gym shutdown reshaped personal training forever - and what trainers got wrong about it.",
+    "date": "June 04, 2020",
+    "date_iso": "2020-06-04",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/8173423/pexels-photo-8173423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "statista.com",
+      "ncbi.nlm.nih.gov",
+      "investor.onepeloton.com"
+    ],
+    "posted_iso": "2026-06-07",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
