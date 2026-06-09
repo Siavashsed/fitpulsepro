@@ -214,5 +214,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Whoop 4.0 Dropped in 2021 and Quietly Changed How Athletes Think About Recovery",
+    "slug": "whoop-4-launch-2021-recovery-tracking",
+    "meta_description": "Rachel Stone breaks down why Whoop 4.0's 2021 launch mattered more than the hype, and what it actually changed for serious training.",
+    "date": "July 01, 2021",
+    "date_iso": "2021-07-01",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/374673/pexels-photo-374673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "forbes.com",
+      "ncbi.nlm.nih.gov",
+      "statista.com"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
