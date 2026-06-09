@@ -284,7 +284,7 @@ body[data-page-depth="1"] article .concl,
 body[data-page-depth="1"] article strong{color:var(--text,#d1d5db) !important}
 body[data-page-depth="1"] article a,
 body[data-page-depth="1"] article p a,
-body[data-page-depth="1"] article .intro a{color:var(--text,#d6ff3f) !important;text-decoration:underline;text-underline-offset:3px}
+body[data-page-depth="1"] article .intro a{color:var(--text,#d6ff3f) !important;text-decoration:none;text-underline-offset:3px}
 /* Article page bg matches the dark homepage scheme so the dark text stays
    readable end-to-end. Was rendering near-black-on-near-black because the
    SHELL injects a dark bg from the homepage but the article CSS assumed
@@ -297,6 +297,9 @@ body[data-page-depth="1"] .ap-kicker{color:var(--text,#9ca0a8) !important}
 body[data-page-depth="1"] .ap-concl{color:var(--text,#d1d5db) !important}
 body[data-page-depth="1"] .ap-pull{color:var(--text,#f0f1f4) !important;border-left-color:var(--text,#d6ff3f) !important}
 /* /CONTRAST-AUDIT */
+
+/* custom */
+/* Hide everything above header */ body > *:first-child:not(header) { display: none !important; } .catalogue, .full-catalogue, [class*='catalogue'], .above-header { display: none !important; }
 </style>
 </head>
 <body>
