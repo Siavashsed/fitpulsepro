@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://siavashsed.github.io/fitpulsepro/</loc><lastmod>2026-06-07</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://siavashsed.github.io/fitpulsepro/about/</loc><lastmod>2026-06-07</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://siavashsed.github.io/fitpulsepro/contact/</loc><lastmod>2026-06-07</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://siavashsed.github.io/fitpulsepro/privacy/</loc><lastmod>2026-06-07</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://siavashsed.github.io/fitpulsepro/</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://siavashsed.github.io/fitpulsepro/about/</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://siavashsed.github.io/fitpulsepro/contact/</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://siavashsed.github.io/fitpulsepro/privacy/</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://siavashsed.github.io/fitpulsepro/plyometrics-heavy-lifting-athletes/</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/fitpulsepro/periodization-models-linear-undulating-block/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/fitpulsepro/deload-weeks-preserve-strength-gains/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -16,4 +16,5 @@
   <url><loc>https://siavashsed.github.io/fitpulsepro/whoop-4-recovery-wearable-2022-2/</loc><lastmod>2022-02-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/fitpulsepro/anterior-pelvic-tilt-lower-back-pain-fix/</loc><lastmod>2026-06-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://siavashsed.github.io/fitpulsepro/home-fitness-boom-2020-training/</loc><lastmod>2020-06-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://siavashsed.github.io/fitpulsepro/whoop-4-launch-2021-recovery-tracking/</loc><lastmod>2021-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
