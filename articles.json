@@ -233,5 +233,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "You're Probably Training Each Muscle Group Twice as Often as You Need To",
+    "slug": "training-frequency-muscle-group-myths",
+    "meta_description": "Rachel Stone breaks down training frequency myths with real data and 10 years coaching athletes. Here's how often you actually need to hit each muscle group.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/29825216/pexels-photo-29825216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "journals.humankinetics.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Whoop 4.0 Redefined Recovery Tracking in 2022. Here's What Actually Changed.",
+    "slug": "whoop-4-recovery-tracking-2022",
+    "meta_description": "Rachel Stone on why Whoop 4.0's 2022 launch shifted how serious athletes think about recovery, strain, and sleep data. Real-world verdict inside.",
+    "date": "April 06, 2022",
+    "date_iso": "2022-04-06",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/8033089/pexels-photo-8033089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "whoop.com",
+      "ncbi.nlm.nih.gov",
+      "forbes.com",
+      "consumerreports.org"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
