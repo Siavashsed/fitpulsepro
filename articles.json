@@ -270,5 +270,41 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Full-Body vs Split Routines: The Real Deciding Factor Is Your Calendar",
+    "slug": "full-body-vs-split-routines",
+    "meta_description": "Full-body or split routine? The honest answer depends on how many days you actually train, not which one builds more muscle. A coach breaks it down.",
+    "date": "July 13, 2026",
+    "date_iso": "2026-07-13",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/13219986/pexels-photo-13219986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-07-13",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "24 Hour Fitness Just Filed for Bankruptcy. The Gym Model Was Already Dying.",
+    "slug": "gym-bankruptcy-2020-home-fitness-shift",
+    "meta_description": "24 Hour Fitness and Gold's Gym filed bankruptcy in 2020 as gyms shut down. A trainer breaks down what the collapse means for how you train.",
+    "date": "April 15, 2020",
+    "date_iso": "2020-04-15",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/29149073/pexels-photo-29149073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reuters.com",
+      "ihrsa.org",
+      "investor.onepeloton.com"
+    ],
+    "posted_iso": "2026-07-13",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
