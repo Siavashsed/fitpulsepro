@@ -306,5 +306,21 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Why Your Training Plan Peaks Too Early and How to Fix It",
+    "slug": "periodize-training-peak-not-burnout",
+    "meta_description": "A strength coach's blunt guide to periodizing your training so you peak on the day that matters instead of burning out three weeks before it.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/37972529/pexels-photo-37972529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
