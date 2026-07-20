@@ -322,5 +322,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Peloton Recalled 2.2 Million Bikes and Nobody Was Surprised",
+    "slug": "peloton-bike-seat-post-recall-2023",
+    "meta_description": "Peloton's 2023 recall of 2.2 million bikes over broken seat posts, what the reports actually said, and what it means for your home setup.",
+    "date": "July 05, 2023",
+    "date_iso": "2023-07-05",
+    "author": "Rachel Turner",
+    "image": "https://images.pexels.com/photos/7690217/pexels-photo-7690217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cpsc.gov",
+      "reuters.com",
+      "journals.lww.com"
+    ],
+    "posted_iso": "2026-07-20",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
