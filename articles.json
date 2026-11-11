@@ -194,7 +194,8 @@
     "posted_iso": "2026-06-07",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "How the 2020 Home Fitness Boom Rewrote the Rules of Personal Training",
@@ -213,7 +214,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "Whoop 4.0 Dropped in 2021 and Quietly Changed How Athletes Think About Recovery",
@@ -232,7 +234,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "HIIT & Conditioning"
   },
   {
     "title": "You're Probably Training Each Muscle Group Twice as Often as You Need To",
@@ -249,7 +252,8 @@
     "posted_iso": "2026-07-01",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "Whoop 4.0 Redefined Recovery Tracking in 2022. Here's What Actually Changed.",
@@ -269,7 +273,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Recovery"
   },
   {
     "title": "Full-Body vs Split Routines: The Real Deciding Factor Is Your Calendar",
@@ -286,7 +291,8 @@
     "posted_iso": "2026-07-13",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "24 Hour Fitness Just Filed for Bankruptcy. The Gym Model Was Already Dying.",
@@ -305,7 +311,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "Why Your Training Plan Peaks Too Early and How to Fix It",
@@ -321,7 +328,8 @@
     "posted_iso": "2026-07-15",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Strength Training"
   },
   {
     "title": "Peloton Recalled 2.2 Million Bikes and Nobody Was Surprised",
@@ -340,6 +348,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Recovery"
   }
 ]
