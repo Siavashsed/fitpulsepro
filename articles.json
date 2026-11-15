@@ -350,5 +350,41 @@
       "en"
     ],
     "category": "Recovery"
+  },
+  {
+    "title": "Your Workout Log Is a Diary. Make It a Decision Tool",
+    "slug": "track-workouts-every-session-forward",
+    "meta_description": "How to track workouts so every session moves you forward: log reps in reserve, set a progression rule, and read the trend instead of the day.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/9131064/pexels-photo-9131064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Whoop 4.0 Is Here, and Your Recovery Score Still Isn't a Coach",
+    "slug": "whoop-4-launch-2021-recovery-score",
+    "meta_description": "Whoop 4.0 launched in September 2021 with new sensors and a smaller strap. A coach explains what changed and why the recovery score still misleads people.",
+    "date": "June 18, 2021",
+    "date_iso": "2021-06-18",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/5310792/pexels-photo-5310792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "whoop.com",
+      "pubmed.ncbi.nlm.nih.gov",
+      "med.stanford.edu"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
