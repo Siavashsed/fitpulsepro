@@ -404,5 +404,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Three Days, Five Lifts, Twelve Weeks: The Beginner Program That Builds Muscle",
+    "slug": "beginner-lifting-program-12-weeks-muscle",
+    "meta_description": "A beginner lifting program that builds real muscle in 12 weeks: three full-body days, simple progression and the protein target that matters.",
+    "date": "November 17, 2026",
+    "date_iso": "2026-11-17",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/4047238/pexels-photo-4047238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "cdc.gov"
+    ],
+    "posted_iso": "2026-11-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
