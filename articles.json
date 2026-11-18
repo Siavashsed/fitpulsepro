@@ -421,5 +421,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Daily Treadmill Hour Is Burning Less Fat Than You Think",
+    "slug": "why-cardio-alone-fails-fat-loss",
+    "meta_description": "Cardio alone rarely drives real fat loss. A coach of competitive athletes explains the energy math, the research, and what to do instead.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/4854260/pexels-photo-4854260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "scientificamerican.com",
+      "med.stanford.edu"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
