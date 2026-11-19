@@ -439,5 +439,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Progressive Overload Is the One Lever That Still Works in Year Five",
+    "slug": "progressive-overload-only-variable-that-matters",
+    "meta_description": "Progressive overload is the only training variable that keeps paying off. A coach of 10 years explains how to progress reps, load and sets.",
+    "date": "November 19, 2026",
+    "date_iso": "2026-11-19",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/116078/pexels-photo-116078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "peerj.com",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-11-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
