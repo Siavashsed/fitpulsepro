@@ -472,5 +472,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Injury Isn't a Pause Button, So Stop Treating It Like One",
+    "slug": "train-around-injuries-keep-momentum",
+    "meta_description": "Learn how to train around injuries without losing momentum: keep the healthy tissue loaded, use cross-education, and let pain set the rules.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/4046657/pexels-photo-4046657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "bjsm.bmj.com"
+    ],
+    "posted_iso": "2026-11-21",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
