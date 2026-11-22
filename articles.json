@@ -489,5 +489,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "1.6 Grams Per Kilo Does the Job for Most Lifters",
+    "slug": "protein-intake-research-answer",
+    "meta_description": "How much protein do you actually need? Meta-analysis data says about 1.6 g/kg a day covers most lifters. Here's when to go higher and when to stop.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/29654027/pexels-photo-29654027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bjsm.bmj.com",
+      "jissn.biomedcentral.com",
+      "nap.nationalacademies.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Online Training Won 2021, and Most Coaches Weren't Ready for It",
+    "slug": "online-training-2021-fitness-trend",
+    "meta_description": "Online training took the top spot in ACSM's 2021 fitness trends survey. A coach's read on what the shift got right, what broke, and what to do now.",
+    "date": "March 24, 2021",
+    "date_iso": "2021-03-24",
+    "author": "Rachel Turner",
+    "image": "https://images.pexels.com/photos/5890703/pexels-photo-5890703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "acsm.org",
+      "who.int",
+      "cpsc.gov"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
