@@ -526,5 +526,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Crash Diet Fails Because the Deficit Is Too Big",
+    "slug": "sustainable-calorie-deficit-without-misery",
+    "meta_description": "A sustainable calorie deficit is smaller than you think. Here's the size, the protein target, and the break schedule I use with athletes.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Rachel Stone",
+    "image": "https://images.pexels.com/photos/10415414/pexels-photo-10415414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "thelancet.com",
+      "pubmed.ncbi.nlm.nih.gov",
+      "bjsm.bmj.com",
+      "nwcr.ws"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
