@@ -545,5 +545,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Gym Anxiety Is Mostly a Planning Problem, Not a Confidence Problem",
+    "slug": "gym-anxiety-planning-problem-beginners",
+    "meta_description": "Gym anxiety eases with a plan, not a pep talk. A coach with 10 years of experience explains what actually works for beginners, and what doesn't.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Petros Halas",
+    "image": "https://images.pexels.com/photos/9644816/pexels-photo-9644816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "psycnet.apa.org",
+      "health.gov",
+      "onlinelibrary.wiley.com"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
