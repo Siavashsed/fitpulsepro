@@ -597,5 +597,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The 8 to 12 Rep Rule Is Mostly Myth. Here's What Actually Counts",
+    "slug": "right-rep-range-strength-size-endurance",
+    "meta_description": "Choosing a rep range for strength, size, or endurance is simpler than the gym myths suggest. Here's what the research and a decade of coaching show.",
+    "date": "November 27, 2026",
+    "date_iso": "2026-11-27",
+    "author": "Petros Halas",
+    "image": "https://images.pexels.com/photos/18187618/pexels-photo-18187618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "mdpi.com"
+    ],
+    "posted_iso": "2026-11-27",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
